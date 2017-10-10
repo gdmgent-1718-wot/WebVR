@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>360&deg; Image</title>
+    <meta name="description" content="360&deg; Image - A-Frame">
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-sky src="Source/VR_A_Inkom.JPG" rotation="0 -130 0"></a-sky>
+        <a-entity position="0 1.8 4">
+          <a-camera>
+            <a-cursor color="#4CC3D9"></a-cursor>
+          </a-camera>
+        </a-entity>
+      //Verdiep 1
+      <a-sphere id="orange-cube" position="16 3.5 -13" rotation="10 20 10"
+              width="2" depth="2" height="2" color="#F16745"
+              href="verdiepEen_inkom.html">
+      </a-sphere>
+      //Buiten
+      <a-sphere id="orange-cube" position="-10 3.5 16" rotation="30 30 0"
+        width="2" depth="2" height="2" color="#F16745"
+        href="buiten_a.html">
+      </a-sphere>
+      //Gang
+      <a-sphere id="orange-cube" position="-15 3.5 -18" rotation="30 30 0"
+        width="2" depth="2" height="2" color="#F16745"
+        href="audi_gang.html">
+      </a-sphere>
+
+      <a-text font="kelsonsans" value="Verdiep 1" width="90" position="17 4.5 -10"
+              rotation="0 -23 0">
+      </a-text>
+      <a-text font="kelsonsans" value="Gang" width="90" position="-15 4.5 -23"
+      rotation="0 20 0"></a-text>
+
+      <a-text font="kelsonsans" value="Buiten" width="90" position="-14 15 30"
+      rotation="0 140 0"></a-text>
+    </a-scene>
+  </body>
+  <script src="enter_vr.js"></script>
+</html>
